@@ -1,21 +1,23 @@
-export const textFarGalaxy = "It is a period of civil war.\n" +
-    "            Rebel spaceships, striking\n" +
-    "            from a hidden base, have won\n" +
-    "            their first victory against\n" +
-    "            the evil Galactic Empire.\n" +
-    "\n" +
-    "            During the battle, Rebel\n" +
-    "            spies managed to steal secret\n" +
-    "            plans to the Empire's\n" +
-    "            ultimate weapon, the DEATH\n" +
-    "            STAR, an armored space\n" +
-    "            station with enough power\n" +
-    "            to destroy an entire planet.\n" +
-    "\n" +
-    "            Pursued by the Empire's\n" +
-    "            sinister agents, Princess\n" +
-    "            Leia races home aboard her\n" +
-    "            starship, custodian of the\n" +
-    "            stolen plans that can save her\n" +
-    "            people and restore\n" +
-    "            freedom to the galaxy...."
+export const navItems = ['Home', 'About me', 'Star Wars', 'Contact'];
+export const dreamTeamPics = ['friend1', 'friend2', 'friend3', 'friend4', 'friend5', 'friend6'];
+export const openingCrawl = `It is a period of civil war.
+                Rebel spaceships, striking
+                from a hidden base, have won
+                their first victory against
+                the evil Galactic Empire.
+
+                During the battle, Rebel
+                spies managed to steal secret
+                plans to the Empire's
+                ultimate weapon, the DEATH
+                STAR, an armored space
+                station with enough power
+                to destroy an entire planet.
+
+                Pursued by the Empire's
+                sinister agents, Princess
+                Leia races home aboard her
+                starship, custodian of the
+                stolen plans that can save her
+                people and restore
+                freedom to the galaxy....`

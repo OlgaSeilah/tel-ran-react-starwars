@@ -4,7 +4,7 @@ const Footer = () => {
             <div className="btn btn-danger col-sm-2 offset-sm-2">Send me an <span
                 className="text-dark text-uppercase">email</span></div>
         </footer>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;
