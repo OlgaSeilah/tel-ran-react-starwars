@@ -1,5 +1,6 @@
 export const navItems = ['Home', 'About me', 'Star Wars', 'Contact'];
-export const dreamTeamPics = ['friend1', 'friend2', 'friend3', 'friend4', 'friend5', 'friend6'];
+export const dreamTeamPics = ['friend1', 'friend2', 'friend3', 'friend4', 'friend5', 'friend6', 'friend7', 'friend8', 'friend9'];
+export const dreamTeamTitle = 'Dream team';
 export const openingCrawl = `It is a period of civil war.
                 Rebel spaceships, striking
                 from a hidden base, have won
