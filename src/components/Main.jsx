@@ -1,15 +1,22 @@
-import Hero from "./Hero.jsx";
-import DreamTeam from "./DreamTeam.jsx";
-import OpeningCrawl from "./OpeningCrawl.jsx";
+import AboutMe from "./AboutMe.jsx";
+import StarWars from "./StarWars.jsx";
+import Contact from "./Contact.jsx";
+import {navItems} from "../utils/constants.js";
+import Home from "./Home.jsx";
 
-const Main = () => {
-    return (
-        <main className="clearfix">
-            <Hero/>
-            <DreamTeam/>
-            <OpeningCrawl/>
-        </main>
-    );
+const Main = ({page}) => { // можно писать еще вот так: ({page})
+
+
+    switch (page) {
+        case navItems[1]:
+            return <AboutMe/>;
+        case navItems[2]:
+            return <StarWars/>;
+        case navItems[3]:
+            return <Contact/>;
+        default:
+            return <Home/>;
+    }
 };
 
 export default Main;
