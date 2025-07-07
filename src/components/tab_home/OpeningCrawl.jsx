@@ -16,10 +16,11 @@ const OpeningCrawl = () => {
             <p className="farGalaxy">{openingCrawl}</p>
         );
     } else {
-        return (<>
-                <p className="farGalaxy">{openingCrawl}</p>
-                <div className="spinner-border text-muted">Loading...</div>
-            </>
+        return (
+            <p className={'farGalaxy'}>
+                <span className="spinner-border spinner-border-sm"></span>
+                Loading...
+            </p>
         );
     }
 };
