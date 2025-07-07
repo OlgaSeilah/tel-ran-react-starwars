@@ -1,5 +1,5 @@
 import DreamTeamItem from "./DreamTeamItem.jsx";
-import {dreamTeamPics, dreamTeamTitle} from "../utils/constants.js";
+import {dreamTeamPics, dreamTeamTitle} from "../../utils/constants.js";
 
 const DreamTeam = () => {
     return (
