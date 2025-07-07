@@ -1,12 +1,10 @@
-import AboutMe from "./AboutMe.jsx";
-import StarWars from "./StarWars.jsx";
-import Contact from "./Contact.jsx";
+import AboutMe from "./tab_aboutme/AboutMe.jsx";
+import StarWars from "./tab_starwars/StarWars.jsx";
+import Contact from "./tab_contact/Contact.jsx";
 import {navItems} from "../utils/constants.js";
-import Home from "./Home.jsx";
+import Home from "./tab_home/Home.jsx";
 
-const Main = ({page}) => { // можно писать еще вот так: ({page})
-
-
+const Main = ({page}) => {
     switch (page) {
         case navItems[1]:
             return <AboutMe/>;
