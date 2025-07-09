@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {baseUrl} from "../../utils/constants.js";
+import {baseUrl} from "../../utils/Constants.js";
 
 const OpeningCrawl = () => {
     const [openingCrawl, setOpeningCrawl] = useState();

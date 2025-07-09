@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './ContactForm.css';
 import ContactFormDropdown from "./ContactFormDropdown.jsx";
-import {baseUrl} from "../../utils/constants.js";
+import {baseUrl} from "../../utils/Constants.js";
 
 const ContactForm = ({handleSubmit}) => {
 

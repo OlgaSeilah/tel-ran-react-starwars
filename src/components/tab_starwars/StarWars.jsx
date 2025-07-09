@@ -1,5 +1,5 @@
 import React from 'react';
-import {starWarsInfo} from "../../utils/constants.js";
+import {starWarsInfo} from "../../utils/Constants.js";
 
 const StarWars = () => {
     return (
