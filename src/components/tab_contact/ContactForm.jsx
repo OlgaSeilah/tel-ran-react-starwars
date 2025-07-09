@@ -3,7 +3,7 @@ import './ContactForm.css';
 import ContactFormDropdown from "./ContactFormDropdown.jsx";
 import {baseUrl} from "../../utils/constants.js";
 
-const ContactForm = () => {
+const ContactForm = ({handleSubmit}) => {
 
     const [planets, setPlanets] = useState([]);
 
@@ -16,7 +16,7 @@ const ContactForm = () => {
     return (
         <div>
             <div className="container">
-                <form>
+                <form onSubmit={handleSubmit}>
                     <label>First Name
                         <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
                     </label>
@@ -29,7 +29,7 @@ const ContactForm = () => {
                     <label>Subject
                         <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
                     </label>
-                    <input type="submit" value="Submit"/>
+                    <input id="submit-btn" type="submit" value="Submit"/>
                 </form>
             </div>
         </div>
