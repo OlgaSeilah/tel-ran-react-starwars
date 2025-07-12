@@ -7,10 +7,14 @@ const ContactForm = ({handleSubmit}) => {
 
     const [planets, setPlanets] = useState([]);
 
+    async function getPlanets() {
+        const res = await fetch(`${baseUrl}/v1/planets`);
+        const data = await res.json();
+        setPlanets(data.map(item => item.name));
+    }
+
     useEffect(() => {
-        fetch(`${baseUrl}/v1/planets`)
-            .then(res => res.json())
-            .then(data => setPlanets(data))
+        getPlanets();
     }, [])
 
     return (
