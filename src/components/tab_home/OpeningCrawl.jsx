@@ -23,7 +23,7 @@ const OpeningCrawl = () => {
 
     if (openingCrawl) {
         return (
-            <p className="farGalaxy">{openingCrawl}</p>
+            <p className="leading-[1.6] text-[1.7em] text-justify">{openingCrawl}</p>
         );
     } else {
         return (
