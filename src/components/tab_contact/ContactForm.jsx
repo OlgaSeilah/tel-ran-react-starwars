@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import './ContactForm.css';
 import ContactFormDropdown from "./ContactFormDropdown.jsx";
 import {baseUrl} from "../../utils/Constants.js";
 
@@ -45,24 +44,24 @@ const ContactForm = ({handleSubmit}) => {
         }
     }, [])
 
-
+//flex flex-col text-3xl py-1
     return (
         <div>
-            <div className="container">
-                <form onSubmit={handleSubmit}>
-                    <label>First Name
-                        <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
+            <div className="flex flex-col items-center justify-center w-full text-2xl py-10">
+                <form onSubmit={handleSubmit} className="flex flex-col bg-gray-color p-3">
+                    <label className="flex flex-col ">First Name
+                        <input className={"border rounded-lg"} type="text" id="fname" name="firstname" placeholder="Your name.."/>
                     </label>
-                    <label htmlFor="lname">Last Name
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
+                    <label htmlFor="lname" className="flex flex-col">Last Name
+                        <input className={"border rounded-lg"} type="text" id="lname" name="lastname" placeholder="Your last name.."/>
                     </label>
 
                     <ContactFormDropdown planets={planets}/>
 
-                    <label>Subject
-                        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                    <label className="flex flex-col">Subject
+                        <textarea className={"border rounded-lg"} id="subject" name="subject" placeholder="Write something.."></textarea>
                     </label>
-                    <input id="submit-btn" type="submit" value="Submit"/>
+                    <input className={'bg-red-color border-black border-2 rounded-md m-auto p-2 cursor-pointer'} id="submit-btn" type="submit" value="Submit"/>
                 </form>
             </div>
         </div>

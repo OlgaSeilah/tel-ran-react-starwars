@@ -4,7 +4,7 @@ const Contact = () => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        alert("error: no api is set ro the form")
+        alert("error: no api is set to the form")
     }
 
     return (

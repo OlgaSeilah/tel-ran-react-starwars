@@ -40,7 +40,7 @@ const AboutMe = () => {
 
         if (aboutMe) {
             return (
-                <div className="aboutMe">
+                <div className="flex flex-col text-3xl py-1">
                     <span>Name: {aboutMe.name}</span>
                     <span>Homeworld: {aboutMe.homeworld}</span>
                     <span>Birth year: {aboutMe.birth_year}</span>
@@ -48,7 +48,7 @@ const AboutMe = () => {
             );
         } else {
             return (
-                <div className="aboutMe">
+                <div className="flex flex-col text-3xl py-1">
                     <span>Name: Loading data...</span>
                     <span>Homeworld: Loading data...</span>
                     <span>Birth year: Loading data...</span>

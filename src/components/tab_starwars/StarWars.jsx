@@ -3,7 +3,7 @@ import {starWarsInfo} from "../../utils/Constants.js";
 
 const StarWars = () => {
     return (
-        <div className="farGalaxy">
+        <div className="text-2xl text-justify">
             {starWarsInfo}
         </div>
     );

@@ -3,8 +3,8 @@ const ContactFormDropdown = ({planets}) => {
     if (planets) {
         return (
             <div>
-                <label>Country
-                    <select id="planet" name="planet">
+                <label className="flex flex-col">Country
+                    <select className={"border rounded-lg"} id="planet" name="planet">
                         {planets.map(planet => {
                                 return (
                                     <option key={planet.id} value={planet.name}>{planet.name}</option>
@@ -18,8 +18,8 @@ const ContactFormDropdown = ({planets}) => {
     } else {
         return (
             <div>
-                <label>Country
-                    <select id="planet" name="planet">
+                <label className="flex flex-col">Country
+                    <select className={"border rounded-lg"} id="planet" name="planet">
                         <option value="empty">Loading planets list...</option>
                     </select>
                 </label>
