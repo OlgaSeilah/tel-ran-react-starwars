@@ -3,8 +3,12 @@ import StarWars from "./tab_starwars/StarWars.jsx";
 import Contact from "./tab_contact/Contact.jsx";
 import {navItems} from "../utils/Constants.js";
 import Home from "./tab_home/Home.jsx";
+import {useContext} from "react";
+import {ProjectContext} from "../utils/Context.js";
 
-const Main = ({page}) => {
+const Main = () => {
+    const {page} = useContext(ProjectContext);
+
     switch (page) {
         case navItems[1]:
             return <AboutMe/>;

@@ -1,8 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import ContactFormDropdown from "./ContactFormDropdown.jsx";
 import {baseUrl} from "../../utils/Constants.js";
+import {ContactContext} from "../../utils/Context.js";
 
-const ContactForm = ({handleSubmit}) => {
+const ContactForm = () => {
 
     const [planets, setPlanets] = useState([]);
 
@@ -44,24 +45,29 @@ const ContactForm = ({handleSubmit}) => {
         }
     }, [])
 
-//flex flex-col text-3xl py-1
+    const handleSubmit = useContext(ContactContext);
+
     return (
         <div>
             <div className="flex flex-col items-center justify-center w-full text-2xl py-10">
                 <form onSubmit={handleSubmit} className="flex flex-col bg-gray-color p-3">
                     <label className="flex flex-col ">First Name
-                        <input className={"border rounded-lg"} type="text" id="fname" name="firstname" placeholder="Your name.."/>
+                        <input className={"border rounded-lg"} type="text" id="fname" name="firstname"
+                               placeholder="Your name.."/>
                     </label>
                     <label htmlFor="lname" className="flex flex-col">Last Name
-                        <input className={"border rounded-lg"} type="text" id="lname" name="lastname" placeholder="Your last name.."/>
+                        <input className={"border rounded-lg"} type="text" id="lname" name="lastname"
+                               placeholder="Your last name.."/>
                     </label>
-
-                    <ContactFormDropdown planets={planets}/>
-
+                    <ContactContext value={{planets}}>
+                        <ContactFormDropdown />
+                    </ContactContext>
                     <label className="flex flex-col">Subject
-                        <textarea className={"border rounded-lg"} id="subject" name="subject" placeholder="Write something.."></textarea>
+                        <textarea className={"border rounded-lg"} id="subject" name="subject"
+                                  placeholder="Write something.."></textarea>
                     </label>
-                    <input className={'bg-red-color border-black border-2 rounded-md m-auto p-2 cursor-pointer'} id="submit-btn" type="submit" value="Submit"/>
+                    <input className={'bg-red-color border-black border-2 rounded-md m-auto p-2 cursor-pointer'}
+                           id="submit-btn" type="submit" value="Submit"/>
                 </form>
             </div>
         </div>

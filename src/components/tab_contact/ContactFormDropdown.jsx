@@ -1,4 +1,9 @@
-const ContactFormDropdown = ({planets}) => {
+import {useContext} from "react";
+import {ContactContext} from "../../utils/Context.js";
+
+const ContactFormDropdown = () => {
+
+    const {planets} = useContext(ContactContext);
 
     if (planets) {
         return (

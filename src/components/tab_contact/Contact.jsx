@@ -1,4 +1,5 @@
 import ContactForm from "./ContactForm.jsx";
+import {ContactContext} from "../../utils/Context.js";
 
 const Contact = () => {
 
@@ -9,7 +10,9 @@ const Contact = () => {
 
     return (
         <div>
-            <ContactForm handleSubmit={handleSubmit}/>
+            <ContactContext value={handleSubmit}>
+                <ContactForm/>
+            </ContactContext>
         </div>
     );
 };
